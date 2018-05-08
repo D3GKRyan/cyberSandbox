@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HGTV Contest</title>
+    <style media="screen">
+    html, body, iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      margin: 0px;
+    }
+
+    .top {
+      position: absolute;
+      top: 10px;
+      height: 36px;
+      width: 100%;
+      visibility: hidden;
+    }
+
+    .top-nav {
+      width: 994px;
+      margin: 0 auto;
+      position: relative;
+      visibility: hidden;
+    }
+
+    .clickjack {
+      position: relative;
+      background: rgba(255, 255, 255, 0);
+      left: 660px;
+      width: 41px;
+      height: 17px;
+      cursor: pointer;
+      visibility: visible;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 20px;;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: white;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
+    }
+    </style>
+    <script>
+    var cj = $('.clickjack');
+
+    cj.click(function() {
+      alert('gotcha!');
+    });
+
+    </script>
+  </head>
+  <body>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gardening</a></li>
+        <li><a href="#">Houses</a></li>
+        <li><a href="contest.html">Contest</a></li>
+      </ul>
+      <iframe src="http://hgtv.com"></iframe>
+
+      <div class="top">
+        <div class="top-nav">
+          <div class="clickjack"></div>
+        </div>
+      </div>
+
+  </body>
+</html>
